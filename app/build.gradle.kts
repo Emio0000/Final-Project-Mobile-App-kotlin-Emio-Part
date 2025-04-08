@@ -52,6 +52,8 @@ dependencies {
     implementation(libs.firebase.auth.ktx)
     implementation(libs.play.services.location)
     implementation(libs.generativeai)
+    implementation("com.google.android.material:material:1.11.0")
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

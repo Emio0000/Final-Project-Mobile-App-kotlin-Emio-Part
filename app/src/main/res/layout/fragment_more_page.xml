@@ -1,36 +1,89 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
+    android:background="@drawable/img"
+    android:gravity="center_horizontal"
+    android:padding="20dp"
     tools:context=".ui.activities.bottom_navigation.fragments.MoreFragmentPage">
 
-
-    <!-- Reminders -->
-    <TextView
-        android:id="@+id/reminders"
+    <!-- Container to center the content vertically -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Reminders"
-        android:drawableStart="@android:drawable/ic_lock_idle_alarm"
-        android:drawablePadding="12dp"
-        android:padding="16dp"
-        android:background="?android:attr/selectableItemBackground"
-        android:textSize="18sp" />
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
 
-    <!-- History -->
-    <TextView
-        android:id="@+id/history"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="History"
-        android:drawableStart="@android:drawable/ic_menu_recent_history"
-        android:drawablePadding="12dp"
-        android:padding="16dp"
-        android:background="?android:attr/selectableItemBackground"
-        android:textSize="18sp" />
+        <!-- Title: More (Placed below the top) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More"
+            android:textColor="@android:color/white"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
 
+        <!-- Description -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Below are 2 other functions that can ease your fitness and healthy life."
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_marginBottom="32dp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Reminders Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/blue_primary"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/reminders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reminders"
+                android:drawableStart="@android:drawable/ic_menu_help"
+                android:drawablePadding="16dp"
+                android:padding="16dp"
+                android:textSize="24sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:gravity="center_vertical|start" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- History Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/blue_primary"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="History"
+                android:drawableStart="@android:drawable/ic_menu_recent_history"
+                android:drawablePadding="16dp"
+                android:padding="16dp"
+                android:textSize="24sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:gravity="center_vertical|start" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
 </LinearLayout>
