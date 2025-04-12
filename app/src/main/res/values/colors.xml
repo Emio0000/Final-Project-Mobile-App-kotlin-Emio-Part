@@ -26,5 +26,6 @@
         <!-- Dark Blue Color for Dark Mode -->
         <color name="blue_dark">#0D47A1</color> <!-- Darker blue for dark mode -->
 
-
+    <color name="blue_light">#BBDEFB</color>    <!-- Light Blue Color -->
+    <color name="gray_dark">#212121</color> <!-- Dark Gray Color -->
 </resources>
